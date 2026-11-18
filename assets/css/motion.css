@@ -19,6 +19,9 @@
 }
 
 html{scroll-padding-top:calc(var(--head-h) + 8px);}
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth;}
+}
 
 /* ---------------------------------------------------------------
    1｜出现（reveal）
