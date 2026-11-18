@@ -170,6 +170,29 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   @keyframes rise{to{opacity:1;transform:none;}}
 }
 
+/* 首屏大图 */
+.hero-fig{
+  margin:clamp(36px,5.4vw,68px) 0 0;
+}
+.hero-fig-frame{
+  overflow:hidden;
+  border:1px solid var(--line2);
+  background:var(--tint);
+}
+.hero-fig img{
+  width:100%;
+  height:clamp(240px,42vw,560px);
+  object-fit:cover;
+  object-position:top center;
+}
+.hero-fig figcaption{
+  margin-top:.9em;
+  font-size:.78rem;
+  line-height:1.7;
+  color:var(--faint);
+  max-width:52em;
+}
+
 /* ---------- 章节头：编号走左轨，不在标题上方加 eyebrow ---------- */
 .sec{
   padding:clamp(48px,7vw,96px) 0;

@@ -16,8 +16,11 @@
 <link rel="canonical" href="https://ymataz.github.io/portfolio-2026/work/eodd.html">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 fill=%27%23fff%27/%3E%3Cpath d=%27M7 8h3.2l5.8 9.2L21.8 8H25l-7.2 11.3V24h-3.4v-4.7z%27 fill=%27%231A2B3C%27/%3E%3Crect x=%2723%27 y=%2722%27 width=%272%27 height=%272%27 fill=%27%232C5A7C%27/%3E%3C/svg%3E">
 <link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/motion.css">
 </head>
 <body>
+
+<div class="readbar" aria-hidden="true"></div>
 
 <header class="site-head">
   <div class="wrap">
@@ -37,10 +40,10 @@
   <div class="wrap">
     <div class="case-head">
       <p class="breadcrumb"><a href="../index.html">作品集</a> / 02 · 团队研究</p>
-      <h1 class="case-title">EODD<br>可解释 AI 决策界面</h1>
-      <p class="case-claim">让第三步的推理，能被第二个人复核。</p>
+      <h1 class="case-title" data-reveal="mask">EODD<br>可解释 AI 决策界面</h1>
+      <p class="case-claim" data-reveal="up">让第三步的推理，能被第二个人复核。</p>
 
-      <dl class="case-meta">
+      <dl class="case-meta" data-reveal="up">
         <div><dt>时间</dt><dd>2026.04 — 06</dd></div>
         <div><dt>性质</dt><dd>团队项目，参与非主导</dd></div>
         <div><dt>我的部分</dt><dd>用户实验 · 界面与可视化 · 可解释性实证分析</dd></div>
@@ -52,23 +55,23 @@
   <!-- ============ 背景 ============ -->
   <section class="case-sec">
     <div class="wrap grid">
-      <div class="rail"><span class="n">01</span>背景 · 约束</div>
+      <div class="rail" data-reveal="up"><span class="n">01</span>背景 · 约束</div>
 
       <div class="col-main">
-        <h2>问题不是「解释不清」，是「没有人会读完」</h2>
+        <h2 data-reveal="up">问题不是「解释不清」，是「没有人会读完」</h2>
         <p>高风险场景里，多个智能体分工推演，最后一步由人确认。系统必须能说出自己的推理过程——但这条链常常有二十多步。</p>
         <p>传统做法是加解释：把链铺在下面，让用户自己读。可用性测试里没人读。<strong>真正的问题不是信息不足，是没有人会把它读完。</strong></p>
         <p>我要做的不是让解释更详细，是<strong>让人能跳到某一步，而不是顺序读完</strong>。</p>
 
-        <h3>三条约束</h3>
+        <h3 data-reveal="up">三条约束</h3>
         <ul>
           <li><strong>决策必须可读。</strong>不能要求人读完整条链，否则等于没有解释。</li>
           <li><strong>必须可追责。</strong>谁驳回哪一步，要有记录。</li>
           <li><strong>不能增加心理负担。</strong>解释更多，但不能更累——这是我最担心的那条。</li>
         </ul>
 
-        <h3>我的角色（边界写清楚）</h3>
-        <div class="kv">
+        <h3 data-reveal="up">我的角色（边界写清楚）</h3>
+        <div class="kv" data-reveal="up">
           <div class="row"><div class="k">界面与可视化</div><div class="v">我独立设计并实现</div></div>
           <div class="row"><div class="k">用户实验</div><div class="v">我设计、执行、做数据分析</div></div>
           <div class="row"><div class="k">论文写作</div><div class="v">团队共同完成，我参与非主导</div></div>
@@ -76,8 +79,8 @@
         </div>
         <p>研究框架与论文由团队负责；我把界面、可视化与实验执行这一段做到底。</p>
 
-        <h3>三阶段实证</h3>
-        <table class="t">
+        <h3 data-reveal="up">三阶段实证</h3>
+        <table class="t" data-reveal="up">
           <thead><tr><th style="width:22%;">阶段</th><th style="width:26%;">样本</th><th>验的是什么</th></tr></thead>
           <tbody>
             <tr><td>Phase 1</td><td class="n">N = 5 专家</td><td>专家启发式走查，先证明这套轨迹读得下去</td></tr>
@@ -88,11 +91,11 @@
       </div>
 
       <div class="col-side">
-        <figure class="fig" style="margin-top:0;">
+        <figure class="fig" data-reveal="mask" style="margin-top:0;">
           <img src="../assets/img/eodd-hero.webp" alt="EODD Studio 线上平台首屏：标题为 Build explainable multi-agent AI workflows with transparent decision traces。" loading="lazy">
           <figcaption>线上平台 eodd.studio 首屏（我独立设计与搭建的站点）。</figcaption>
         </figure>
-        <div class="kv" style="margin-top:24px;">
+        <div class="kv" data-reveal="up" style="margin-top:24px;">
           <div class="row"><div class="k">平台</div><div class="v"><a href="https://eodd.studio" target="_blank" rel="noopener">eodd.studio ↗</a></div></div>
           <div class="row"><div class="k">论文</div><div class="v"><a href="https://ymataz.github.io/assets/EODD_Design_Science_Paper.pdf" target="_blank" rel="noopener">PDF ↗</a></div></div>
         </div>
@@ -103,12 +106,12 @@
   <!-- ============ 判断一 ============ -->
   <section class="case-sec">
     <div class="wrap grid">
-      <div class="rail"><span class="n">02</span>判断 1 / 3</div>
+      <div class="rail" data-reveal="up"><span class="n">02</span>判断 1 / 3</div>
 
       <div class="col-main">
-        <h2>可解释不是「多给信息」</h2>
+        <h2 data-reveal="up">可解释不是「多给信息」</h2>
 
-        <div class="dec">
+        <div class="dec" data-reveal="up">
           <div class="row"><div class="k">当时的处境</div><div class="v">系统给的推理过程有二十多步</div></div>
           <div class="row"><div class="k">我以为</div><div class="v">全部展示，人才能信</div></div>
           <div class="row turn"><div class="k">实际是</div><div class="v">全展开没人读；人要的是「能跳到某一步」</div></div>
@@ -120,7 +123,7 @@
       </div>
 
       <div class="col-side">
-        <div class="kv" style="margin-top:0;">
+        <div class="kv" data-reveal="up" style="margin-top:0;">
           <div class="row"><div class="k">来自访谈</div><div class="v">「我没有办法在五分钟里读完二十步。」</div></div>
           <div class="row"><div class="k">据此否决</div><div class="v">一个总览页、把整条推理链铺开的第一版</div></div>
         </div>
@@ -131,12 +134,12 @@
   <!-- ============ 判断二 ============ -->
   <section class="case-sec">
     <div class="wrap grid">
-      <div class="rail"><span class="n">03</span>判断 2 / 3</div>
+      <div class="rail" data-reveal="up"><span class="n">03</span>判断 2 / 3</div>
 
       <div class="col-main">
-        <h2>没有「部分相信」这种状态</h2>
+        <h2 data-reveal="up">没有「部分相信」这种状态</h2>
 
-        <div class="dec">
+        <div class="dec" data-reveal="up">
           <div class="row"><div class="k">当时的处境</div><div class="v">用户在「全信」和「不用」之间</div></div>
           <div class="row"><div class="k">我以为</div><div class="v">中间会有「部分相信」这种状态</div></div>
           <div class="row turn"><div class="k">实际是</div><div class="v">没有中间态：不能复核的东西，人不会拿它做重要决定</div></div>
@@ -146,7 +149,7 @@
 
         <p>这条判断把设计问题变成了工程问题：如果界面要求「每条结论都能点开看证据」，那系统就必须在生成阶段留下引用。不能事后补。</p>
 
-        <h3>两套系统的结构对照</h3>
+        <h3 data-reveal="up">两套系统的结构对照</h3>
         <p>下图不是插画，是论文里那张结构对照图的可读化重排：上面是单体黑箱，下面是四角色分工——同样宽度、同样层级，比的是结构，不是视觉。</p>
 
         <div class="dg">
@@ -185,13 +188,13 @@
   <!-- ============ 判断三 ============ -->
   <section class="case-sec">
     <div class="wrap grid">
-      <div class="rail"><span class="n">04</span>判断 3 / 3</div>
+      <div class="rail" data-reveal="up"><span class="n">04</span>判断 3 / 3</div>
 
       <div class="col-main">
-        <h2>解释得更多，不能让人更累</h2>
+        <h2 data-reveal="up">解释得更多，不能让人更累</h2>
         <p>这是整册唯一一处「用实验验证了设计假设」的地方——而且验证的是我自己担心的那件事：加了这么多解释，认知负担会不会反而上去。</p>
 
-        <div class="dec">
+        <div class="dec" data-reveal="up">
           <div class="row"><div class="k">当时的处境</div><div class="v">担心增加解释会加重认知负担</div></div>
           <div class="row"><div class="k">我以为</div><div class="v">看得越多越累</div></div>
           <div class="row turn"><div class="k">实际是</div><div class="v">p = .37：心理负担没有显著增加（N=16）</div></div>
@@ -199,7 +202,7 @@
           <div class="row"><div class="k">代价</div><div class="v">界面密度高，必须靠结构而不是靠留白来控制</div></div>
         </div>
 
-        <h3>决策轨迹的四个必填字段</h3>
+        <h3 data-reveal="up">决策轨迹的四个必填字段</h3>
         <div class="fields">
           <div class="field"><span class="tag">a</span><span class="nm">Rationale Log</span><span class="ds">每一步的推演记录，含证据、判断、结论。</span></div>
           <div class="field"><span class="tag">b</span><span class="nm">Role Contributions</span><span class="ds">哪个智能体贡献了什么，可归因到具体角色。</span></div>
@@ -221,10 +224,10 @@
   <!-- ============ 数据 ============ -->
   <section class="case-sec">
     <div class="wrap grid">
-      <div class="rail"><span class="n">05</span>实证 · N=16</div>
+      <div class="rail" data-reveal="up"><span class="n">05</span>实证 · N=16</div>
       <div class="col-wide">
-        <h2>四个数，只有一个是好消息需要解释的</h2>
-        <table class="t">
+        <h2 data-reveal="up">四个数，只有一个是好消息需要解释的</h2>
+        <table class="t" data-reveal="up">
           <thead><tr><th style="width:22%;">指标</th><th style="width:18%;">值</th><th>它意味着什么</th></tr></thead>
           <tbody>
             <tr><td>可解释性</td><td class="n">d = 1.61</td><td>p &lt; .001</td></tr>
@@ -247,12 +250,12 @@
   </section>
 
   <div class="wrap">
-    <div class="next">
+    <div class="next" data-reveal="up">
       <span class="lbl">下一个</span>
       <a href="minimal-design.html">03 · minimal-design 前端设计规则书 <span>个人规范 · 开源 →</span></a>
     </div>
 
-    <div class="contact-band">
+    <div class="contact-band" data-reveal="up">
       <div><span>邮箱</span><a href="mailto:Yachin.HCD@outlook.com">Yachin.HCD@outlook.com</a></div>
       <div><span>电话</span><a href="tel:+8617857399362">178-5739-9362</a></div>
       <div><span>GitHub</span><a href="https://github.com/YMaTaZ" target="_blank" rel="noopener">github.com/YMaTaZ</a></div>
@@ -269,5 +272,6 @@
   </div>
 </footer>
 
+<script src="../assets/js/motion.js" defer></script>
 </body>
 </html>
