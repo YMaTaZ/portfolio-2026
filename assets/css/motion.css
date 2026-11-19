@@ -85,14 +85,14 @@ html{scroll-padding-top:calc(var(--head-h) + 8px);}
   position:sticky;
   top:0;
   z-index:60;
-  background:rgba(255,255,255,.78);
+  background:rgba(237,233,225,.78);
   -webkit-backdrop-filter:saturate(180%) blur(18px);
   backdrop-filter:saturate(180%) blur(18px);
   transition:background var(--t-fast) var(--e-soft),
              border-color var(--t-fast) var(--e-soft);
 }
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
-  .site-head{background:rgba(255,255,255,.96);}
+  .site-head{background:rgba(237,233,225,.96);}
 }
 .site-head .wrap{transition:padding var(--t-fast) var(--e-soft);}
 .site-head.is-scrolled .wrap{padding-top:13px;padding-bottom:13px;}
@@ -153,7 +153,7 @@ html{scroll-padding-top:calc(var(--head-h) + 8px);}
    6｜作品列表：整行从左浮起一层底，标题右移，行高不变
    --------------------------------------------------------------- */
 .work-list a{
-  background-image:linear-gradient(90deg,var(--tint) 0%,rgba(246,244,239,0) 78%);
+  background-image:linear-gradient(90deg,var(--tint) 0%,rgba(226,220,207,0) 78%);
   background-repeat:no-repeat;
   background-position:0 50%;
   background-size:0% 100%;

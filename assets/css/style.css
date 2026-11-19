@@ -2,7 +2,7 @@
    袁烨 · 作品集 2026
    本站按 frontend-assets/skill/RULES.md（minimal-design v0.3.0）自建：
      · 每屏 ≤5 色、主色唯一、accent 面积 ≤8%
-     · 正文对比 ≥4.5:1（ink on paper = 12.6:1，ink-soft = 7.1:1）
+     · 正文对比 ≥4.5:1（实测：ink 11.9:1，soft 6.7:1，faint 5.3:1，accent 6.1:1）
      · 中文行宽 32–36em、拉丁 65–75ch
      · 标题上方不加 eyebrow（标签走左轨或行内）
      · 等分只用一种：12 栏
@@ -13,14 +13,17 @@
    ============================================================== */
 
 :root{
-  --paper:#FFFFFF;
-  --tint:#F6F4EF;
+  /* 底色：暖纸，不是白屏。
+     用户反馈「太白太亮」，整站从 #FFFFFF 压到浅砂。
+     文字同时加深，保住对比度（见下方实测）。 */
+  --paper:#EDE9E1;
+  --tint:#E2DCCF;
   --ink:#1A2B3C;
-  --soft:#4A5A6A;
-  --faint:#8A98A6;
+  --soft:#43515D;
+  --faint:#52606F;
   --accent:#2C5A7C;
-  --line:rgba(26,43,60,.14);
-  --line2:rgba(26,43,60,.06);
+  --line:rgba(26,43,60,.16);
+  --line2:rgba(26,43,60,.08);
 
   --col:12;
   --gap:24px;
@@ -176,8 +179,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 }
 .hero-fig-frame{
   overflow:hidden;
-  border:1px solid var(--line2);
+  border:1px solid var(--line);
   background:var(--tint);
+  box-shadow:0 1px 2px rgba(26,43,60,.05),0 14px 34px -26px rgba(26,43,60,.45);
 }
 .hero-fig img{
   width:100%;
@@ -510,8 +514,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .fig{margin:clamp(24px,3.4vw,40px) 0;max-width:100%;}
 .fig img{
   width:100%;
-  border:1px solid var(--line2);
+  border:1px solid var(--line);
   background:var(--tint);
+  box-shadow:0 1px 2px rgba(26,43,60,.04),0 12px 30px -24px rgba(26,43,60,.42);
 }
 .fig figcaption{
   margin-top:.8em;
@@ -558,7 +563,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 }
 .screens figure{margin:0;}
 .screens img{
-  border:1px solid var(--line2);
+  border:1px solid var(--line);
+  box-shadow:0 1px 2px rgba(26,43,60,.04),0 12px 28px -22px rgba(26,43,60,.42);
   aspect-ratio:4/3;
   object-fit:cover;
   object-position:top center;
@@ -744,7 +750,7 @@ table.t td.n{font-family:var(--mono);color:var(--ink);}
 .tracebar{
   border:1px solid rgba(44,90,124,.34);
   border-top:0;
-  background:rgba(44,90,124,.05);
+  background:rgba(44,90,124,.07);
   font-size:.76rem;line-height:1.5;color:var(--accent);
   padding:7px 12px;text-align:center;
 }
