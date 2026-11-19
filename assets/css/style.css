@@ -347,6 +347,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   font-size:.86rem;
   line-height:1.7;
 }
+.dim{color:var(--faint);}
 .kv .k{color:var(--faint);letter-spacing:.04em;}
 .kv .v{color:var(--ink);}
 .kv .v a{border-bottom:1px solid var(--line);}

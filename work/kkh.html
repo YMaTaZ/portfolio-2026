@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KKH 妇女儿童医院 · 多指标患者体验看板 — 袁烨</title>
-<meta name="description" content="让一组没人读完的问卷数据，进入 5 分钟的晨会。KKH 妇女儿童医院患者体验看板：方案、信息架构、界面与前端由一人完成。">
+<meta name="description" content="让一组没人读完的问卷数据，进入 5 分钟的晨会。KKH 妇女儿童医院患者体验看板：工具站与五个方案由我独立完成，Resource Guide 与 Checklist 与团队共同完成。">
 <meta name="theme-color" content="#E9E4DA">
 <meta property="og:type" content="article">
 <meta property="og:title" content="KKH 妇女儿童医院 · 多指标患者体验看板">
@@ -44,9 +44,9 @@
       <p class="case-claim" data-reveal="up">让一组没人读完的问卷数据，进入 5 分钟的晨会。</p>
 
       <dl class="case-meta" data-reveal="up">
-        <div><dt>时间</dt><dd>2026.06.11 — 07.29<br>48 天</dd></div>
-        <div><dt>机构</dt><dd>新加坡 KK 妇女儿童医院<br>（KKH）</dd></div>
-        <div><dt>我的角色</dt><dd>方案 · 信息架构 · 界面 · 前端</dd></div>
+        <div><dt>时间</dt><dd>2026.05.21 — 08.20<br>实习三个月</dd></div>
+        <div><dt>机构</dt><dd>SingHealth Duke-NUS IPSQ 实习<br>派驻 KK 妇女儿童医院（KKH）</dd></div>
+        <div><dt>我的角色</dt><dd>方案 · 信息架构 · 界面 · 前端<br>四人团队，工具站与五个方案由我独立完成</dd></div>
         <div><dt>状态</dt><dd>交付后进入院方内部对接流程</dd></div>
       </dl>
     </div>
@@ -64,14 +64,14 @@
 
         <h3 data-reveal="up">四条约束（都不是我定的）</h3>
         <ul>
-          <li><strong>三个人要的不同。</strong>负责人看趋势，护士长看执行，医生看解释——同一批数字，三种读法。</li>
+          <li><strong>两种视角要的不同。</strong>管理层看趋势与驱动因素，护士长看这一班先盯哪两件事——同一批数字，两种读法。</li>
           <li><strong>一屏只有几分钟。</strong>晨会 5 分钟，不能要求任何人先学一个新工具。</li>
           <li><strong>真实工作流是纸。</strong>病房里摊开的是打印表，屏幕版必须能让位于纸版。</li>
           <li><strong>拿不到个体数据。</strong>只有操作层聚合值，任何单个患者的记录都看不到。</li>
         </ul>
 
         <h3 data-reveal="up">我的角色</h3>
-        <p>研究（访谈三类角色，同一天，各 ≤30 分钟）、架构（把多指标收敛成 3 页模板的动线）、界面（三屏 + 站点三页）、实现（零框架单文件前端）。<strong>方案由我定，站点由我一人设计并搭建</strong>；院方参与需求确认与评审。</p>
+        <p>研究（两场一对一深访：管理层 34 分钟、护士长 54 分钟，相隔四天）、架构（把多指标收敛成一条动线）、界面（三屏 + 四视图工具站）、实现（零框架单文件前端）。<strong>工具站、故事板与五个方案由我独立完成</strong>；Resource Guide 与 Checklist 与四人团队共同完成；院方负责需求确认与合规评审。</p>
       </div>
 
       <div class="col-side">
@@ -89,13 +89,13 @@
       <div class="rail" data-reveal="up"><span class="n">02</span>判断 1 / 3</div>
 
       <div class="col-main">
-        <h2 data-reveal="up">三个人，不是三种需求</h2>
-        <p>同一个项目里，三个角色各说了一堆要求，而且互相矛盾。这是设计里最常见、也最容易处理错的一刻：直觉是排需求优先级。</p>
+        <h2 data-reveal="up">两种视角，不是两套需求</h2>
+        <p>同一个项目里，管理层要「更少」，护士长要「能一眼扫」。看起来互相矛盾，这是设计里最容易处理错的一刻：直觉是排需求优先级。</p>
 
         <div class="dec" data-reveal="up">
-          <div class="row"><div class="k">当时的处境</div><div class="v">三个人各说了一堆需求，而且互相矛盾</div></div>
+          <div class="row"><div class="k">当时的处境</div><div class="v">两个角色各说了一堆要求，而且互相矛盾</div></div>
           <div class="row"><div class="k">我以为</div><div class="v">需求不同，那就做需求优先级排序</div></div>
-          <div class="row turn"><div class="k">实际是</div><div class="v">并非需求不同；实际是使用场景不同</div></div>
+          <div class="row turn"><div class="k">实际是</div><div class="v">并非要求冲突；是两个不同的使用场景</div></div>
           <div class="row"><div class="k">所以我改了</div><div class="v">不排优先级，改按场景分三层</div></div>
           <div class="row"><div class="k">代价</div><div class="v">前两周几乎没有产出任何界面</div></div>
         </div>
@@ -104,13 +104,13 @@
         <table class="t" data-reveal="up">
           <thead><tr><th style="width:20%;">场景</th><th style="width:34%;">谁在看</th><th>给他的形态</th></tr></thead>
           <tbody>
-            <tr><td>看结果</td><td>医院负责人：这一周整体在往哪走</td><td>一张趋势，不做交互</td></tr>
-            <tr><td>看执行</td><td>护士长：今天这一班先盯哪两件事</td><td>一张清单，能打印</td></tr>
-            <tr><td>看解释</td><td>医生：这个数字为什么是这个数字</td><td>可展开的来源，不占主屏</td></tr>
+            <tr><td>看结果</td><td>管理层：这一周整体在往哪走、什么在驱动它</td><td>一张趋势 + 三个核心概念，不做交互</td></tr>
+            <tr><td>看执行</td><td>护士长：先扫整体，再钻异常项</td><td>一张清单，能打印</td></tr>
+            <tr><td>看来源</td><td>我自己补的一层：这个数字凭什么</td><td>可展开的来源，不占主屏</td></tr>
           </tbody>
         </table>
 
-        <p>三个人说的都是「我想要一个能看数据的页面」，但一个人要的是一句话，一个人要的是两件事，一个人要的是来源。把这三样压进同一屏，就是那种所有人都不满意的报表。</p>
+        <p>两个人说的都是「我想要一个能看数据的页面」，但一个要的是一句话，一个要的是两件事。把这两样压进同一屏，就是那种谁都不满意的报表。<span class="dim">第三层「看来源」没有访谈原话，也没有访谈到医生——它来自我对 PI/QI 断点的判断，不是受访者提出的要求。</span></p>
 
         <div class="quote" data-reveal="up">
           「先问谁在什么时候会打开它，再问他想要什么功能。」
@@ -122,7 +122,7 @@
         <div class="kv" data-reveal="up">
           <div class="row"><div class="k">代价</div><div class="v">前两周零界面产出</div></div>
           <div class="row"><div class="k">换来的</div><div class="v">三屏的分工一次定死，后面不再改结构</div></div>
-          <div class="row"><div class="k">如果重做</div><div class="v">我会把三次访谈拆到三周，而不是压在同一天各 30 分钟</div></div>
+          <div class="row"><div class="k">如果重做</div><div class="v">我会把两场深访再做第二遍——34 分钟和 54 分钟只够问到流程，不够问到抵触</div></div>
         </div>
       </div>
     </div>
@@ -140,7 +140,7 @@
         <div class="dec" data-reveal="up">
           <div class="row"><div class="k">当时的处境</div><div class="v">所有指标都上，一屏挤满了图表</div></div>
           <div class="row"><div class="k">我以为</div><div class="v">信息更全，判断会更准</div></div>
-          <div class="row turn"><div class="k">实际是</div><div class="v">护士长读完只问一句：今天先做什么</div></div>
+          <div class="row turn"><div class="k">实际是</div><div class="v">她第一眼看趋势、第二眼钻异常项，但看完没有一句能带进晨会的话</div></div>
           <div class="row"><div class="k">所以我改了</div><div class="v">顶层只留三个数 + 一句话，其余下沉</div></div>
           <div class="row"><div class="k">代价</div><div class="v">有指标被藏起来，得额外解释它为什么不在第一屏</div></div>
         </div>
@@ -172,9 +172,9 @@
 
       <div class="col-side">
         <div class="kv" data-reveal="up">
-          <div class="row"><div class="k">交付</div><div class="v">3 页模板 + 三件套（7 段指南 / 4 步清单 / 7 帧分镜）</div></div>
-          <div class="row"><div class="k">原型</div><div class="v">5 版</div></div>
-          <div class="row"><div class="k">关键方案</div><div class="v">A5 晨会简报卡</div></div>
+          <div class="row"><div class="k">交付</div><div class="v">三屏 + 四视图工具站 + 三件套（8 页指南 / 4 步清单 / 7 帧分镜）</div></div>
+          <div class="row"><div class="k">方案</div><div class="v">五个并行方案，互补不迭代</div></div>
+          <div class="row"><div class="k">推进方向</div><div class="v">A5 晨会速查卡（A5 是纸张尺寸）</div></div>
         </div>
       </div>
     </div>
@@ -236,18 +236,18 @@
         <table class="t" data-reveal="up">
           <thead><tr><th style="width:28%;">件</th><th style="width:14%;">量</th><th>一句话</th></tr></thead>
           <tbody>
-            <tr><td>Resource Guide</td><td class="n">7 段</td><td>谁在读、读哪一段、读完之后下一步做什么</td></tr>
-            <tr><td>Checklist</td><td class="n">4 步</td><td>能打印，带责任人和时间，一页放得下</td></tr>
+            <tr><td>Resource Guide</td><td class="n">8 页</td><td>筛选器 → 读数 → 排序 → 提问提示 → 四步管理循环（团队共同完成）</td></tr>
+            <tr><td>Checklist</td><td class="n">4 步</td><td>能打印，带责任人和时间，一页放得下（团队共同完成）</td></tr>
             <tr><td>Storyboard</td><td class="n">7 帧</td><td>从打开到采取行动，七帧走完</td></tr>
           </tbody>
         </table>
         <p>三件套不是交付物清单，是让院方的人在我离开之后还能继续用。</p>
 
-        <h3 data-reveal="up">迭代：从「全」到「少」到「能接手」</h3>
+        <h3 data-reveal="up">五个方案，为什么推进 A5 卡</h3>
         <ul>
-          <li><strong>v1—v2</strong>　把指标搬上屏幕 —— 做的是「全」</li>
-          <li><strong>v3</strong>　发现读不完，开始收敛层级 —— 做的是「少」</li>
-          <li><strong>v4—v5</strong>　纸版反推屏幕结构，补状态与交接 —— 做的是「能接手」</li>
+          <li><strong>五个方案</strong>　晨会速查卡 / 术语速查卡 / 投诉分类指南 / 控制图看图指南 / 模块化活动册 —— 并行提出，互补不迭代</li>
+          <li><strong>为什么选 A5</strong>　护士长缺的是一张能带进晨会的纸，不是又一个要登录的系统 —— A5 是纸张尺寸，不是版本号</li>
+          <li><strong>介质之争</strong>　管理层原话不要实体卡（几百个部门就是几百份）；形式保留，介质改成每周生成的 PDF —— 这是取舍</li>
         </ul>
 
         <div class="quote" data-reveal="up">
@@ -259,14 +259,14 @@
         <h3 data-reveal="up">谁来接手</h3>
         <div class="kv" data-reveal="up">
           <div class="row"><div class="k">接的人</div><div class="v">院方内部工作组护理管理岗，不额外招人</div></div>
-          <div class="row"><div class="k">接的是</div><div class="v">一份模板 + 三件套，不是要开发维护的系统</div></div>
+          <div class="row"><div class="k">接的是</div><div class="v">一份模板 + 三件套，不是要人维护的系统</div></div>
           <div class="row"><div class="k">改起来</div><div class="v">换指标改文案、换病区改卡，不用找我</div></div>
         </div>
       </div>
 
       <div class="col-side">
         <div class="kv" data-reveal="up">
-          <div class="row"><div class="k">七帧原图</div><div class="v"><a href="https://ymataz.github.io/assets/kkh-storyboard/1.jpg" target="_blank" rel="noopener">storyboard 1—7 ↗</a></div></div>
+          <div class="row"><div class="k">七帧原图</div><div class="v"><a href="https://ymataz.github.io/assets/kkh-storyboard/1.jpg" target="_blank" rel="noopener">storyboard 1—7（1920×1080）↗</a></div></div>
           <div class="row"><div class="k">工具站</div><div class="v">PREMs Translation Toolkit</div></div>
         </div>
       </div>
@@ -306,27 +306,27 @@
         <h2 data-reveal="up">三个如果重做</h2>
         <p>这个项目最大的风险不是做得不够，是我做完之后，没有第二次机会验证它。</p>
         <ul>
-          <li><strong>我会在第三版就做一次 5 人可用性测试</strong>，而不是到最后版本才验证。教训：验证太晚。</li>
+          <li><strong>我会更早做那次 N=3 可用性测试</strong>，而不是等五个方案都成形之后。教训：验证太晚。</li>
           <li><strong>我会在第一周就拿到一张真实在用的打印表</strong>，而不是自己推测纸版长什么样。教训：约束靠推测，不靠观察。</li>
           <li><strong>我会把「谁在维护这套界面」提前问清楚</strong>，而不是默认有人接。教训：交接想当然。</li>
-          <li><strong>我会把三次访谈拆到三周</strong>，而不是压在同一天各 30 分钟。教训：一次问完，只能问到表面。</li>
+          <li><strong>我会把两场深访再做第二遍</strong>，而不是各问一次就定稿。教训：34 分钟和 54 分钟只够问到流程，不够问到抵触，样本就两个人。</li>
         </ul>
 
         <h3 data-reveal="up">我说过「不」吗</h3>
         <p><strong>这个项目里，我没有拒绝过任何需求。</strong>现在回头看，这是我最大的缺失——我把「都做」当成了负责。拒绝一个需求需要三个前提：有人在提、你有权说不、你能承担后果。整册五个项目里，只有 KKH 同时具备这三条——而我完全没用上。</p>
 
         <div class="quote" style="border-top:1px solid var(--line);padding-top:1.6em;background:none;padding-left:0;padding-right:0;">
-          48 天，3—5 页模板，5 版原型，三件套。<br>
-          <strong>如果再做一次，我会把验证提前到第三版。</strong>
+          实习三个月，五个并行方案，三件套交付。<br>
+          <strong>如果再做一次，我会把那次 N=3 测试提前到方案成形之前。</strong>
         </div>
       </div>
 
       <div class="col-side">
         <div class="kv" data-reveal="up">
-          <div class="row"><div class="k">Day 1—14</div><div class="v">三类角色各 30 分钟问场景。这段时间没有界面。</div></div>
-          <div class="row"><div class="k">Day 15—30</div><div class="v">三层结构定稿，三屏成形。</div></div>
-          <div class="row"><div class="k">Day 31—40</div><div class="v">5 版原型，七帧 storyboard，三件套定稿。</div></div>
-          <div class="row"><div class="k">Day 41—48</div><div class="v">写成可点的 HTML，交给院方内部流程。</div></div>
+          <div class="row"><div class="k">06 月</div><div class="v">资料研读与两场深访（06/19 管理层 34 分钟、06/23 护士长 54 分钟）。这段时间没有界面。</div></div>
+          <div class="row"><div class="k">07 月上</div><div class="v">五个并行方案成形，A5 晨会卡定为推进方向；三层结构定稿，三屏成形。</div></div>
+          <div class="row"><div class="k">07 月下</div><div class="v">工具站三屏、七帧故事板、Resource Guide 与 Checklist。</div></div>
+          <div class="row"><div class="k">08 月上</div><div class="v">写成可点的 HTML，交给院方内部流程。</div></div>
         </div>
       </div>
     </div>
