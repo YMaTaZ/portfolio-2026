@@ -2,7 +2,7 @@
    袁烨 · 作品集 2026
    本站按 frontend-assets/skill/RULES.md（minimal-design v0.3.0）自建：
      · 每屏 ≤5 色、主色唯一、accent 面积 ≤8%
-     · 正文对比 ≥4.5:1（实测：ink 11.9:1，soft 6.7:1，faint 5.3:1，accent 6.1:1）
+     · 正文对比 ≥4.5:1（实测：ink 11.4:1，soft 6.8:1，faint 5.4:1，accent 5.8:1）
      · 中文行宽 32–36em、拉丁 65–75ch
      · 标题上方不加 eyebrow（标签走左轨或行内）
      · 等分只用一种：12 栏
@@ -14,13 +14,13 @@
 
 :root{
   /* 底色：暖纸，不是白屏。
-     用户反馈「太白太亮」，整站从 #FFFFFF 压到浅砂。
-     文字同时加深，保住对比度（见下方实测）。 */
-  --paper:#EDE9E1;
-  --tint:#E2DCCF;
+     用户反馈「太白太亮」，整站从 #FFFFFF 压到浅砂纸。
+     文字同时加深，四档全部在纸面与浅色底块上过 4.5:1。 */
+  --paper:#E9E4DA;
+  --tint:#DCD5C7;
   --ink:#1A2B3C;
-  --soft:#43515D;
-  --faint:#52606F;
+  --soft:#404E5A;
+  --faint:#4E5C6B;
   --accent:#2C5A7C;
   --line:rgba(26,43,60,.16);
   --line2:rgba(26,43,60,.08);
