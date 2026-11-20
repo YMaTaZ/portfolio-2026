@@ -2,7 +2,7 @@
 
 交互设计师（B 端）· 复杂信息架构与多角色界面 · 从研究到前端实现独立跑通。
 
-线上地址：<https://ymataz.github.io/portfolio-2026/>
+线上地址：<https://ymataz.github.io/>
 
 ## 这本册子在讲什么
 
