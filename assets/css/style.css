@@ -674,6 +674,23 @@ table.t td.n{font-family:var(--mono);color:var(--ink);}
 /* ==============================================================
    响应式
    ============================================================== */
+
+/* ==============================================================
+   KKH 八页指南目录条（work/kkh.html）
+   ============================================================== */
+.guide-strip{
+  display:grid;
+  grid-template-columns:repeat(7,minmax(0,1fr));
+  gap:10px;
+  margin-top:14px;
+}
+.guide-strip figure{margin:0;}
+.guide-strip img{width:100%;display:block;border:1px solid var(--line2);}
+.guide-strip figcaption{margin-top:.5em;font-size:.72rem;line-height:1.6;font-weight:600;}
+.guide-strip figcaption span{font-weight:400;color:var(--faint);}
+@media (max-width:720px){
+  .guide-strip{grid-template-columns:repeat(3,minmax(0,1fr));}
+}
 @media (max-width:1000px){
   .hero-copy{grid-column:1 / span 7;}
   .hero-actions{grid-column:1 / span 12;padding-top:1.4em;}
